@@ -13,24 +13,15 @@ namespace FlappyBird
     public partial class Form1 : Form
     {
         private Timer t;
-        private int index = 0;
-        Brush[] brushes = new Brush[10];
+        private Timer spawn;
+        List<Pipe> pipes = new List<Pipe>();
         Random rnd = new Random(DateTime.Now.Millisecond);
+
+        bool init = false;
 
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            this.DoubleBuffered = true;
-            this.Paint += new PaintEventHandler(GameLoop);
-            t = new Timer();
-            t.Interval = 10;
-            t.Tick += new EventHandler(t_Ticket);
-
-            t.Start();
         }
 
         private void t_Ticket(object sender, EventArgs e)
@@ -38,11 +29,30 @@ namespace FlappyBird
             this.Refresh();
         }
 
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+            this.DoubleBuffered = true;
+            this.Paint += new PaintEventHandler(GameLoop);
+            t = new Timer();
+            t.Interval = 10;
+            t.Tick += new EventHandler(t_Ticket);
+            t.Start();
+        }
+
+
         private void GameLoop(object sender, PaintEventArgs e)
         {
-            ResetGame();
+            int i = 0;
+            foreach (Pipe p in pipes)
+            {
+                p.MovePipe(2);
+                p.DrawPipe(sender, e, i);
+                i++;
+                if (i == 2)
+                    i = 0;
+            }
         }
-        private Brush newColor()
+        private Brush NewColor()
         {
             int r = rnd.Next(0, byte.MaxValue + 1);
             int g = rnd.Next(0, byte.MaxValue + 1);
@@ -51,11 +61,38 @@ namespace FlappyBird
             return brush;
         }
 
-        private void ResetGame()
+        public void CreatePipes(object sender, EventArgs e)
         {
-            
+            int height = rnd.Next(100, 400);
+            for (int i = 0; i < 2; i++)
+            {
+                pipes.Add(
+                new Pipe(
+                    this.ClientRectangle.Width - 50,
+                    (height + 100) * i,
+                    50,
+                    height + (500 * i),
+                    NewColor()
+                ));
+            }
         }
 
+        private void ResetGame()
+        {
+            button1.Visible = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            init = true;
+            CreatePipes(sender, e);
+            spawn = new Timer();
+            spawn.Interval = 2500;
+            spawn.Tick += new EventHandler(CreatePipes);
+            spawn.Start();
+            button1.Visible = false;
+            label1.Visible = false;
+        }
 
     }
 }
