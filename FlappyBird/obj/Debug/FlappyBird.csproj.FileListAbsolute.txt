@@ -9,3 +9,14 @@ C:\Users\180976\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.Properties.Resour
 C:\Users\180976\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.csproj.GenerateResource.Cache
 C:\Users\180976\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.exe
 C:\Users\180976\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.pdb
+C:\Users\manut\Desktop\Flappy\FlappyBird\bin\Debug\FlappyBird.exe.config
+C:\Users\manut\Desktop\Flappy\FlappyBird\bin\Debug\FlappyBird.exe
+C:\Users\manut\Desktop\Flappy\FlappyBird\bin\Debug\FlappyBird.pdb
+C:\Users\manut\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.Properties.Resources.resources
+C:\Users\manut\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.csproj.GenerateResource.cache
+C:\Users\manut\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.csproj.CoreCompileInputs.cache
+C:\Users\manut\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.exe
+C:\Users\manut\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.pdb
+C:\Users\manut\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.frm_Menu.resources
+C:\Users\manut\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.csprojAssemblyReference.cache
+C:\Users\manut\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.Pause.resources
