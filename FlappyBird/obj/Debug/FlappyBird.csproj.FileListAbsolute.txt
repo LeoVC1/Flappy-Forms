@@ -17,6 +17,6 @@ C:\Users\manut\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.csproj.GenerateRes
 C:\Users\manut\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.csproj.CoreCompileInputs.cache
 C:\Users\manut\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.exe
 C:\Users\manut\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.pdb
-C:\Users\manut\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.frm_Menu.resources
 C:\Users\manut\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.csprojAssemblyReference.cache
-C:\Users\manut\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.Pause.resources
+C:\Users\manut\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.FrmPause.resources
+C:\Users\manut\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.frm_Menu.resources

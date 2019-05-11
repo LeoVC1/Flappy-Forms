@@ -12,21 +12,16 @@ namespace FlappyBird
 {
     class Pipe
     {
+        int x, y, width, height;
+        Brush pipeColor = new SolidBrush(Color.Black);
 
-        int x;
-        int y;
-        int width;
-        int height;
-        Brush pipeColor;
-
-        public Pipe(int argX, int argY, int argWidth, int argHeight, Brush argColor)
+        public Pipe(int argX, int argY, int argWidth, int argHeight)
         {
             x = argX;
             y = argY;
             width = argWidth;
             height = argHeight;
             Brush brush = new SolidBrush(Color.Black);
-            pipeColor = brush;
         }
 
         public void MovePipe(int speed)
@@ -37,10 +32,8 @@ namespace FlappyBird
         public void DrawPipe(object sender, PaintEventArgs e, int i)
         {
             int otherPos;
-            if (i == 1)
-                otherPos = y;
-            else
-                otherPos = y + height - 30;
+
+            i = i == 1 ? otherPos = y : otherPos = y + height - 30;
             e.Graphics.FillRectangle(pipeColor, x, y, width, height);
             e.Graphics.FillRectangle(pipeColor, x - width + 30, otherPos, (width + width * 2) - 60, 30);
         }

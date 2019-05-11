@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FlappyBird
 {
-    public partial class Pause : Form
+    public partial class FrmPause : Form
     {
-        public Pause()
+        public FrmPause()
         {
             InitializeComponent();
         }
