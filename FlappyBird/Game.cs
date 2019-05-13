@@ -126,5 +126,12 @@ namespace FlappyBird
             }
         }
 
+        private void frm_Menu_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 'w')
+            {
+                player.Jump();
+            }
+        }
     }
 }
