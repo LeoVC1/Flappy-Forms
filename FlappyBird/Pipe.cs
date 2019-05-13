@@ -13,6 +13,7 @@ namespace FlappyBird
     class Pipe
     {
         int x, y, width, height;
+        public Rectangle rectCollider = new Rectangle();
         Brush pipeColor = new SolidBrush(Color.Black);
 
         public Pipe(int argX, int argY, int argWidth, int argHeight)
@@ -36,6 +37,15 @@ namespace FlappyBird
             i = i == 1 ? otherPos = y : otherPos = y + height - 30;
             e.Graphics.FillRectangle(pipeColor, x, y, width, height);
             e.Graphics.FillRectangle(pipeColor, x - width + 30, otherPos, (width + width * 2) - 60, 30);
+
+            Size collSize = new Size((width + width * 2) - 60, 30);
+            TransformCollider(x - width + 30, otherPos, collSize);
+        }
+
+        void TransformCollider(int rectX, int rectY, Size rectSize)
+        {
+            rectCollider.Location = new Point(rectX, rectY);
+            rectCollider.Size = rectSize;
         }
 
     }

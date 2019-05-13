@@ -141,11 +141,11 @@
             // 
             this.lbl_Score.AutoSize = true;
             this.lbl_Score.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Score.Font = new System.Drawing.Font("SmackyFormula", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Score.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Score.ForeColor = System.Drawing.Color.LimeGreen;
             this.lbl_Score.Location = new System.Drawing.Point(338, 27);
             this.lbl_Score.Name = "lbl_Score";
-            this.lbl_Score.Size = new System.Drawing.Size(82, 81);
+            this.lbl_Score.Size = new System.Drawing.Size(69, 73);
             this.lbl_Score.TabIndex = 24;
             this.lbl_Score.Text = "0";
             this.lbl_Score.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -175,6 +175,7 @@
             this.Text = "FormBird";
             this.Load += new System.EventHandler(this.Form1_Load_1);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frm_Menu_KeyDown);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frm_Menu_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.pbGameTitle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Credits)).EndInit();
             this.ResumeLayout(false);
