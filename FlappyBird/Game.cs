@@ -18,7 +18,7 @@ namespace FlappyBird
         Random rnd = new Random(DateTime.Now.Millisecond);
         
         bool init;
-        bool paused;
+        public bool paused;
         int pontos = -1;
 
         public frm_Menu()
@@ -46,7 +46,16 @@ namespace FlappyBird
             int i = 0;
             foreach (Pipe p in pipes)
             {
-                p.MovePipe(1);
+                if (paused != true)
+                {
+                    p.MovePipe(1);
+                    spawn.Enabled = true;
+                }
+                else
+                {
+                    spawn.Enabled = false;
+                }
+                    
                 p.DrawPipe(sender, e, i);
                 i++;
                 if (i == 2)
@@ -87,9 +96,9 @@ namespace FlappyBird
         {
             if (e.KeyCode == Keys.P || e.KeyCode == Keys.Escape)
             {
-                FrmPause pause = new FrmPause();
-                pause.Enabled = true;
-                pause.Visible = true;
+                FrmPause pause = new FrmPause(this);
+                pause.Show();
+                paused = true;
             }
         }
 
