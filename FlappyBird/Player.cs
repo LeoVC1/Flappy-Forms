@@ -23,7 +23,6 @@ namespace FlappyBird
             y = argY;
             width = argWidth;
             height = argHeight;
-            Brush brush = new SolidBrush(Color.Black);
         }
 
         public void MovePlayer()

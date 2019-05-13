@@ -15,6 +15,7 @@ namespace FlappyBird
         private Timer t;
         private Timer spawn;
         List<Pipe> pipes = new List<Pipe>();
+        Player player;
         Random rnd = new Random(DateTime.Now.Millisecond);
         
         bool init;
@@ -24,6 +25,14 @@ namespace FlappyBird
         public frm_Menu()
         {
             InitializeComponent();
+
+            player =
+                new Player(
+                    this.ClientRectangle.Width / 2,
+                    this.ClientRectangle.Width / 2,
+                    30,
+                    30
+                );
         }
 
         private void t_Ticket(object sender, EventArgs e)
@@ -61,6 +70,8 @@ namespace FlappyBird
                 if (i == 2)
                     i = 0;
             }
+            player.MovePlayer();
+            player.DrawPlayer(sender, e);
             lbl_Score.Text = pontos.ToString();
         }
         
@@ -119,6 +130,14 @@ namespace FlappyBird
                     pn_Menu.Visible = true;
                     pn_Credits.Visible = false;
                     break;
+            }
+        }
+
+        private void frm_Menu_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 'w')
+            {
+                player.Jump();
             }
         }
         
