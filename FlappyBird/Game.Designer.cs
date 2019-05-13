@@ -86,6 +86,7 @@
             // 
             // pn_Menu
             // 
+            this.pn_Menu.BackColor = System.Drawing.Color.White;
             this.pn_Menu.Controls.Add(this.lbl_Info);
             this.pn_Menu.Controls.Add(this.pbGameTitle);
             this.pn_Menu.Controls.Add(this.btn_Credits);
