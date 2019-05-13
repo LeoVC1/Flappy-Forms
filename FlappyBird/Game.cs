@@ -107,31 +107,17 @@ namespace FlappyBird
             switch (name)
             {
                 case "Start":
-                    pbGameTitle.Visible = false;
-                    btn_Play.Visible = false;
-                    btn_Credits.Visible = false;
-                    btn_Quit.Visible = false;
-                    lbl_Info.Visible = false;
+                    pn_Menu.Visible = false;
+                    pn_Credits.Visible = false;
                     lbl_Score.Visible = true;
                     break;
                 case "Credits":
-                    pbGameTitle.Visible = true;
-                    pb_Credits.Visible = true;
-                    btn_Play.Visible = false;
-                    btn_Credits.Visible = false;
-                    btn_Quit.Visible = false;
-                    btn_Back.Visible = true;
-                    pbGameTitle.Visible = false;
-                    lbl_Info.Visible = false;
+                    pn_Credits.Visible = true;
+                    pn_Menu.Visible = false;
                     break;
                 case "BackToMenu":
-                    pbGameTitle.Visible = true;
-                    pb_Credits.Visible = false;
-                    btn_Play.Visible = true;
-                    btn_Credits.Visible = true;
-                    btn_Quit.Visible = true;
-                    btn_Back.Visible = false;
-                    lbl_Info.Visible = true;
+                    pn_Menu.Visible = true;
+                    pn_Credits.Visible = false;
                     break;
             }
         }
