@@ -19,7 +19,7 @@ namespace FlappyBird
         Random rnd = new Random(DateTime.Now.Millisecond);
         
         bool init;
-        bool paused;
+        public bool paused;
         int pontos = -1;
 
         public frm_Menu()
@@ -45,11 +45,19 @@ namespace FlappyBird
 
         private void GameLoop(object sender, PaintEventArgs e)
         {
-            label1.Text = player.isJumping.ToString();
             int i = 0;
             foreach (Pipe p in pipes)
             {
-                p.MovePipe(1);
+                if (paused != true)
+                {
+                    p.MovePipe(1);
+                    spawn.Enabled = true;
+                }
+                else
+                {
+                    spawn.Enabled = false;
+                }
+                    
                 p.DrawPipe(sender, e, i);
                 i++;
                 if (i == 2)
@@ -92,9 +100,9 @@ namespace FlappyBird
         {
             if (e.KeyCode == Keys.P || e.KeyCode == Keys.Escape)
             {
-                FrmPause pause = new FrmPause();
-                pause.Enabled = true;
-                pause.Visible = true;
+                FrmPause pause = new FrmPause(this);
+                pause.Show();
+                paused = true;
             }
         }
 
@@ -103,41 +111,20 @@ namespace FlappyBird
             switch (name)
             {
                 case "Start":
-                    pbGameTitle.Visible = false;
-                    btn_Play.Visible = false;
-                    btn_Credits.Visible = false;
-                    btn_Quit.Visible = false;
-                    lbl_Info.Visible = false;
+                    pn_Menu.Visible = false;
+                    pn_Credits.Visible = false;
                     lbl_Score.Visible = true;
                     break;
                 case "Credits":
-                    pbGameTitle.Visible = true;
-                    pb_Credits.Visible = true;
-                    btn_Play.Visible = false;
-                    btn_Credits.Visible = false;
-                    btn_Quit.Visible = false;
-                    btn_Back.Visible = true;
-                    pbGameTitle.Visible = false;
-                    lbl_Info.Visible = false;
+                    pn_Credits.Visible = true;
+                    pn_Menu.Visible = false;
                     break;
                 case "BackToMenu":
-                    pbGameTitle.Visible = true;
-                    pb_Credits.Visible = false;
-                    btn_Play.Visible = true;
-                    btn_Credits.Visible = true;
-                    btn_Quit.Visible = true;
-                    btn_Back.Visible = false;
-                    lbl_Info.Visible = true;
+                    pn_Menu.Visible = true;
+                    pn_Credits.Visible = false;
                     break;
             }
         }
 
-        private void frm_Menu_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == 'w')
-            {
-                player.Jump();
-            }
-        }
     }
 }
