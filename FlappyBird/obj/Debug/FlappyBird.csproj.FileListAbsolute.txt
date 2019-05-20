@@ -35,3 +35,5 @@ C:\Users\ricardo.sodre\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.csproj.Cor
 C:\Users\ricardo.sodre\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.exe
 C:\Users\ricardo.sodre\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.pdb
 >>>>>>> 3b79c6d8c6a3a3be843e48a27807296a7e8bba83
+C:\Users\180976\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.csprojAssemblyReference.cache
+C:\Users\180976\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.csproj.CoreCompileInputs.cache
