@@ -53,6 +53,7 @@ namespace FlappyBird
         private void GameLoop(object sender, PaintEventArgs e)
         {
             int i = 0;
+            int j = 0;
             foreach (Pipe p in pipes)
             {
                 if (paused != true)
@@ -64,14 +65,19 @@ namespace FlappyBird
                 {
                     spawn.Enabled = false;
                 }
-                    
                 p.DrawPipe(sender, e, i);
+                p.CollisionAgainstPlayer(player);
                 i++;
                 if (i == 2)
                     i = 0;
             }
+            player.CollisionAgainstForm(this.ClientRectangle.Height);
             player.MovePlayer();
             player.DrawPlayer(sender, e);
+            if (player.isDead)
+            {
+                GameOver();
+            }
             lbl_Score.Text = pontos.ToString();
         }
         
@@ -111,6 +117,13 @@ namespace FlappyBird
                 pause.Show();
                 paused = true;
             }
+        }
+
+        private void GameOver()
+        {
+            FrmPause pause = new FrmPause(this);
+            pause.Show();
+            paused = true;
         }
 
         public void Check(string name)
