@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPause));
             this.btn_Resume = new System.Windows.Forms.Button();
             this.btn_Quit = new System.Windows.Forms.Button();
             this.lbl_PauseTitle = new System.Windows.Forms.Label();
@@ -38,9 +37,11 @@
             // 
             this.btn_Resume.FlatAppearance.BorderSize = 0;
             this.btn_Resume.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Resume.Location = new System.Drawing.Point(74, 101);
+            this.btn_Resume.Font = new System.Drawing.Font("8BIT WONDER", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Resume.ForeColor = System.Drawing.Color.DarkGreen;
+            this.btn_Resume.Location = new System.Drawing.Point(46, 96);
             this.btn_Resume.Name = "btn_Resume";
-            this.btn_Resume.Size = new System.Drawing.Size(138, 47);
+            this.btn_Resume.Size = new System.Drawing.Size(219, 47);
             this.btn_Resume.TabIndex = 0;
             this.btn_Resume.Text = "Resume";
             this.btn_Resume.UseVisualStyleBackColor = true;
@@ -50,14 +51,16 @@
             // btn_Quit
             // 
             this.btn_Quit.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Quit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Quit.BackgroundImage")));
             this.btn_Quit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_Quit.FlatAppearance.BorderSize = 0;
             this.btn_Quit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Quit.Location = new System.Drawing.Point(74, 164);
+            this.btn_Quit.Font = new System.Drawing.Font("8BIT WONDER", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Quit.ForeColor = System.Drawing.Color.DarkGreen;
+            this.btn_Quit.Location = new System.Drawing.Point(46, 162);
             this.btn_Quit.Name = "btn_Quit";
-            this.btn_Quit.Size = new System.Drawing.Size(138, 47);
+            this.btn_Quit.Size = new System.Drawing.Size(219, 47);
             this.btn_Quit.TabIndex = 1;
+            this.btn_Quit.Text = "QUIT";
             this.btn_Quit.UseVisualStyleBackColor = false;
             this.btn_Quit.UseWaitCursor = true;
             this.btn_Quit.Click += new System.EventHandler(this.btn_Quit_Click);
@@ -65,12 +68,13 @@
             // lbl_PauseTitle
             // 
             this.lbl_PauseTitle.AutoSize = true;
-            this.lbl_PauseTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_PauseTitle.Location = new System.Drawing.Point(76, 28);
+            this.lbl_PauseTitle.Font = new System.Drawing.Font("8BIT WONDER", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_PauseTitle.Location = new System.Drawing.Point(40, 29);
             this.lbl_PauseTitle.Name = "lbl_PauseTitle";
-            this.lbl_PauseTitle.Size = new System.Drawing.Size(148, 37);
+            this.lbl_PauseTitle.Size = new System.Drawing.Size(225, 35);
             this.lbl_PauseTitle.TabIndex = 2;
             this.lbl_PauseTitle.Text = "PAUSED";
+            this.lbl_PauseTitle.UseWaitCursor = true;
             // 
             // FrmPause
             // 

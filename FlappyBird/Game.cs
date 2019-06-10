@@ -18,21 +18,15 @@ namespace FlappyBird
         Player player;
         Random rnd = new Random(DateTime.Now.Millisecond);
         
-        bool init;
+        bool init, over = true;
         public bool paused;
-        int pontos = -1;
+        public int pontos = -1;
 
         public frm_Menu()
         {
             InitializeComponent();
 
-            player =
-                new Player(
-                    this.ClientRectangle.Width / 2,
-                    this.ClientRectangle.Width / 2,
-                    30,
-                    30
-                );
+            player = new Player(this.ClientRectangle.Width / 2, this.ClientRectangle.Width / 2, 30, 30);
         }
 
         private void t_Ticket(object sender, EventArgs e)
@@ -40,7 +34,7 @@ namespace FlappyBird
             this.Refresh();
         }
 
-        private void Form1_Load_1(object sender, EventArgs e)
+        public void Form1_Load_1(object sender, EventArgs e)
         {
             this.DoubleBuffered = true;
             this.Paint += new PaintEventHandler(GameLoop);
@@ -48,12 +42,14 @@ namespace FlappyBird
             t.Interval = 10;
             t.Tick += new EventHandler(t_Ticket);
             t.Start();
+            
+            Frm_Rank rank = new Frm_Rank();
+            rank.Form1_Load(sender, e);
         }
 
         private void GameLoop(object sender, PaintEventArgs e)
         {
             int i = 0;
-            int j = 0;
             foreach (Pipe p in pipes)
             {
                 if (paused != true)
@@ -65,19 +61,24 @@ namespace FlappyBird
                 {
                     spawn.Enabled = false;
                 }
+
                 p.DrawPipe(sender, e, i);
                 p.CollisionAgainstPlayer(player);
                 i++;
+
                 if (i == 2)
                     i = 0;
             }
             player.CollisionAgainstForm(this.ClientRectangle.Height);
             player.MovePlayer();
             player.DrawPlayer(sender, e);
-            if (player.isDead)
+            
+            if (player.isDead == true && over == true)
             {
-                GameOver();
+                over = false;
+                End();
             }
+
             lbl_Score.Text = pontos.ToString();
         }
         
@@ -108,21 +109,13 @@ namespace FlappyBird
         private void btn_Back_Click(object sender, EventArgs e){Check("BackToMenu");}
 
         private void btn_Quit_Click(object sender, EventArgs e){Application.Exit();}
-        
-        private void frm_Menu_KeyDown(object sender, KeyEventArgs e)
+      
+        public void End()
         {
-            if (e.KeyCode == Keys.P || e.KeyCode == Keys.Escape)
-            {
-                FrmPause pause = new FrmPause(this);
-                pause.Show();
-                paused = true;
-            }
-        }
-
-        private void GameOver()
-        {
-            FrmPause pause = new FrmPause(this);
-            pause.Show();
+            Frm_Rank over = new Frm_Rank {Visible = true };
+            over.textBox2.Text = pontos.ToString();
+            over.btn_Back.Visible = false;
+            over.lbl_Rank.Text = "GAME OVER";
             paused = true;
         }
 
@@ -146,13 +139,30 @@ namespace FlappyBird
             }
         }
 
+        private void frm_Menu_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.P || e.KeyCode == Keys.Escape)
+            {
+                FrmPause pause = new FrmPause(this);
+                pause.Show();
+                paused = true;
+            }
+        }
+
         private void frm_Menu_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == 'w')
-            {
                 player.Jump();
-            }
         }
-        
+
+        private void btn_Placar_Click(object sender, EventArgs e)
+        {
+            Frm_Rank rank = new Frm_Rank();
+            rank.Visible = true;
+            rank.btn_Gravar.Enabled = false;
+            rank.btn_Restart.Enabled = false;
+            rank.textBox1.Enabled = false;
+            rank.LoadRank();
+        }
     }
 }

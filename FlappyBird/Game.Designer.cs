@@ -33,6 +33,7 @@
             this.btn_Quit = new System.Windows.Forms.Button();
             this.lbl_Score = new System.Windows.Forms.Label();
             this.pn_Menu = new System.Windows.Forms.Panel();
+            this.btn_Placar = new System.Windows.Forms.Button();
             this.pbGameTitle = new System.Windows.Forms.PictureBox();
             this.btn_Credits = new System.Windows.Forms.Button();
             this.btn_Play = new System.Windows.Forms.Button();
@@ -87,6 +88,7 @@
             // pn_Menu
             // 
             this.pn_Menu.BackColor = System.Drawing.Color.White;
+            this.pn_Menu.Controls.Add(this.btn_Placar);
             this.pn_Menu.Controls.Add(this.lbl_Info);
             this.pn_Menu.Controls.Add(this.pbGameTitle);
             this.pn_Menu.Controls.Add(this.btn_Credits);
@@ -97,6 +99,21 @@
             this.pn_Menu.Name = "pn_Menu";
             this.pn_Menu.Size = new System.Drawing.Size(784, 561);
             this.pn_Menu.TabIndex = 25;
+            // 
+            // btn_Placar
+            // 
+            this.btn_Placar.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Placar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Placar.BackgroundImage")));
+            this.btn_Placar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Placar.FlatAppearance.BorderSize = 0;
+            this.btn_Placar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Placar.Font = new System.Drawing.Font("Ravie", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Placar.Location = new System.Drawing.Point(689, 468);
+            this.btn_Placar.Name = "btn_Placar";
+            this.btn_Placar.Size = new System.Drawing.Size(83, 81);
+            this.btn_Placar.TabIndex = 26;
+            this.btn_Placar.UseVisualStyleBackColor = false;
+            this.btn_Placar.Click += new System.EventHandler(this.btn_Placar_Click);
             // 
             // pbGameTitle
             // 
@@ -211,14 +228,15 @@
         #endregion
         private System.Windows.Forms.Label lbl_Info;
         private System.Windows.Forms.Button btn_Quit;
-        private System.Windows.Forms.Label lbl_Score;
         private System.Windows.Forms.Panel pn_Menu;
-        private System.Windows.Forms.PictureBox pbGameTitle;
         private System.Windows.Forms.Button btn_Credits;
         private System.Windows.Forms.Button btn_Play;
         private System.Windows.Forms.Panel pn_Credits;
         private System.Windows.Forms.PictureBox pb_Credits;
         private System.Windows.Forms.Button btn_Back;
+        public System.Windows.Forms.Button btn_Placar;
+        public System.Windows.Forms.PictureBox pbGameTitle;
+        public System.Windows.Forms.Label lbl_Score;
     }
 }
 

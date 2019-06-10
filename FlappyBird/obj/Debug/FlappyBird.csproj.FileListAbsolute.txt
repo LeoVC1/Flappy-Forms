@@ -1,39 +1,29 @@
-C:\Users\180976\Desktop\FlappyBird\FlappyBird\bin\Debug\FlappyBird.exe.config
-C:\Users\180976\Flappy\FlappyBird\bin\Debug\FlappyBird.exe.config
-C:\Users\180976\Desktop\Flappy\FlappyBird\bin\Debug\FlappyBird.exe.config
-C:\Users\180976\Desktop\Flappy\FlappyBird\bin\Debug\FlappyBird.exe
-C:\Users\180976\Desktop\Flappy\FlappyBird\bin\Debug\FlappyBird.pdb
-C:\Users\180976\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.csprojResolveAssemblyReference.cache
-C:\Users\180976\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.Properties.Resources.resources
-C:\Users\180976\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.csproj.GenerateResource.Cache
-C:\Users\180976\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.exe
-C:\Users\180976\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.pdb
-C:\Users\manut\Desktop\Flappy\FlappyBird\bin\Debug\FlappyBird.exe.config
-C:\Users\manut\Desktop\Flappy\FlappyBird\bin\Debug\FlappyBird.exe
-C:\Users\manut\Desktop\Flappy\FlappyBird\bin\Debug\FlappyBird.pdb
-C:\Users\manut\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.Properties.Resources.resources
-C:\Users\manut\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.csproj.GenerateResource.cache
-C:\Users\manut\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.csproj.CoreCompileInputs.cache
-C:\Users\manut\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.exe
-C:\Users\manut\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.pdb
-C:\Users\manut\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.csprojAssemblyReference.cache
-C:\Users\manut\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.FrmPause.resources
-C:\Users\manut\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.frm_Menu.resources
-<<<<<<< HEAD
-C:\Users\180976\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.frm_Menu.resources
-C:\Users\180976\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.FrmPause.resources
-=======
-C:\Users\ricardo.sodre\Desktop\Flappy\FlappyBird\bin\Debug\FlappyBird.exe.config
-C:\Users\ricardo.sodre\Desktop\Flappy\FlappyBird\bin\Debug\FlappyBird.exe
-C:\Users\ricardo.sodre\Desktop\Flappy\FlappyBird\bin\Debug\FlappyBird.pdb
-C:\Users\ricardo.sodre\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.csprojAssemblyReference.cache
-C:\Users\ricardo.sodre\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.frm_Menu.resources
-C:\Users\ricardo.sodre\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.FrmPause.resources
-C:\Users\ricardo.sodre\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.Properties.Resources.resources
-C:\Users\ricardo.sodre\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.csproj.GenerateResource.cache
-C:\Users\ricardo.sodre\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.csproj.CoreCompileInputs.cache
-C:\Users\ricardo.sodre\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.exe
-C:\Users\ricardo.sodre\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.pdb
->>>>>>> 3b79c6d8c6a3a3be843e48a27807296a7e8bba83
-C:\Users\180976\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.csprojAssemblyReference.cache
-C:\Users\180976\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.csproj.CoreCompileInputs.cache
+C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\bin\Debug\FlappyBird.exe.config
+C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\bin\Debug\FlappyBird.exe
+C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\bin\Debug\FlappyBird.pdb
+C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\obj\Debug\FlappyBird.frm_Menu.resources
+C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\obj\Debug\FlappyBird.FrmPause.resources
+C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\obj\Debug\FlappyBird.Properties.Resources.resources
+C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\obj\Debug\FlappyBird.csproj.GenerateResource.cache
+C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\obj\Debug\FlappyBird.csproj.CoreCompileInputs.cache
+C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\obj\Debug\FlappyBird.exe
+C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\obj\Debug\FlappyBird.pdb
+C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\obj\Debug\FlappyBird.csprojAssemblyReference.cache
+C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\obj\Debug\FlappyBird.csproj.App.config
+C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\obj\Debug\FlappyBird.Frm_Rank.resources
+C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\bin\Debug\FireSharp.dll
+C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\bin\Debug\Newtonsoft.Json.dll
+C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\bin\Debug\Microsoft.Threading.Tasks.xml
+C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\bin\Debug\Newtonsoft.Json.xml
+C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\obj\Debug\FlappyBird.csproj.CopyComplete
