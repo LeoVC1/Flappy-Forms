@@ -109,7 +109,6 @@ namespace FlappyBird
                 }
                 catch{}
             }
-            dgv_Rank[0, 2].ValueType = typeof(DateTime);
             dgv_Rank.Sort(dgv_Rank.Columns[2], ListSortDirection.Descending);
             btn_Back.Visible = true;
         }

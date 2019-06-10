@@ -27,3 +27,31 @@ C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\bin\Debug\System.Net
 C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\bin\Debug\System.Net.Http.Formatting.xml
 C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\bin\Debug\System.Net.Http.Primitives.xml
 C:\Users\lufus\OneDrive\Área de Trabalho\Flappy\FlappyBird\obj\Debug\FlappyBird.csproj.CopyComplete
+C:\Users\gabri\Desktop\Flappy\FlappyBird\bin\Debug\FlappyBird.exe.config
+C:\Users\gabri\Desktop\Flappy\FlappyBird\bin\Debug\FlappyBird.exe
+C:\Users\gabri\Desktop\Flappy\FlappyBird\bin\Debug\FlappyBird.pdb
+C:\Users\gabri\Desktop\Flappy\FlappyBird\bin\Debug\FireSharp.dll
+C:\Users\gabri\Desktop\Flappy\FlappyBird\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\Users\gabri\Desktop\Flappy\FlappyBird\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\gabri\Desktop\Flappy\FlappyBird\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\gabri\Desktop\Flappy\FlappyBird\bin\Debug\Newtonsoft.Json.dll
+C:\Users\gabri\Desktop\Flappy\FlappyBird\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\gabri\Desktop\Flappy\FlappyBird\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\gabri\Desktop\Flappy\FlappyBird\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\gabri\Desktop\Flappy\FlappyBird\bin\Debug\Microsoft.Threading.Tasks.xml
+C:\Users\gabri\Desktop\Flappy\FlappyBird\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\gabri\Desktop\Flappy\FlappyBird\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\gabri\Desktop\Flappy\FlappyBird\bin\Debug\Newtonsoft.Json.xml
+C:\Users\gabri\Desktop\Flappy\FlappyBird\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\gabri\Desktop\Flappy\FlappyBird\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\gabri\Desktop\Flappy\FlappyBird\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\gabri\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.csprojAssemblyReference.cache
+C:\Users\gabri\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.Frm_Rank.resources
+C:\Users\gabri\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.frm_Menu.resources
+C:\Users\gabri\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.FrmPause.resources
+C:\Users\gabri\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.Properties.Resources.resources
+C:\Users\gabri\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.csproj.GenerateResource.cache
+C:\Users\gabri\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.csproj.CopyComplete
+C:\Users\gabri\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.exe
+C:\Users\gabri\Desktop\Flappy\FlappyBird\obj\Debug\FlappyBird.pdb

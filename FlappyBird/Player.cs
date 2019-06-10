@@ -16,7 +16,7 @@ namespace FlappyBird
         public bool isJumping, isDead;
         public Rectangle collision;
 
-        Brush playerColor = new SolidBrush(Color.Black);
+        Brush playerColor = new SolidBrush(Color.DarkGreen);
 
         public Player(int argX, int argY, int argWidth, int argHeight)
         {

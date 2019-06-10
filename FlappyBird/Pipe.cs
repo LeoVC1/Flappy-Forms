@@ -37,7 +37,7 @@ namespace FlappyBird
 
             i = i == 1 ? otherPos = y : otherPos = y + height - 30;
             e.Graphics.FillRectangle(pipeColor, x, y, width, height);
-            e.Graphics.FillRectangle(new SolidBrush(Color.Yellow), x - width + 30, otherPos, (width + width * 2) - 60, 30);
+            e.Graphics.FillRectangle(new SolidBrush(Color.Black), x - width + 30, otherPos, (width + width * 2) - 60, 30);
 
             Size collSize = new Size(width, height);
             TransformCollider(x, y, collSize);
@@ -56,7 +56,7 @@ namespace FlappyBird
             pipeCollider.Location = new Point(rectX, rectY);
             pipeCollider.Size = rectSize;
         }
-
+         
         public void CollisionAgainstPlayer(Player player)
         {
             if (this.rectCollider.IntersectsWith(player.collision) || this.pipeCollider.IntersectsWith(player.collision))
